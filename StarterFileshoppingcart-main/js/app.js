@@ -134,6 +134,14 @@ function clearCart()
     {
         shoppingCartContent.removeChild(shoppingCartContent.firstChild);
     }
+
+    //Clear from Local Storage
+    clearLocalStorage();
+}
+//Clears the whole local storage
+function clearLocalStorage()
+{
+    localStorage.clear();
 }
 
 //Loads when document is ready and prints courses into shopping cart
